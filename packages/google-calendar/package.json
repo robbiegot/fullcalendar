@@ -17,7 +17,8 @@
   "scripts": {
     "build": "standard-scripts pkg:build",
     "clean": "standard-scripts pkg:clean",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "cd ./node_modules/@fullcalendar/google-calendar && npm install && npm run build"
   },
   "type": "module",
   "tsConfig": {
